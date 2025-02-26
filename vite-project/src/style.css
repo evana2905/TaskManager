@@ -1,0 +1,142 @@
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e6e6fa, #d8bfd8);
+  color: #4a235a;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* App Container */
+.app-container {
+  max-width: 500px;
+  background: hsl(198, 87%, 85%);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  color: #6a0dad;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+/* Task Form */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form textarea {
+  padding: 10px;
+  border: 1px solid #c2a2db;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.task-form input:focus,
+.task-form textarea:focus {
+  border-color: #6a0dad;
+  box-shadow: 0 0 5px rgba(106, 13, 173, 0.5);
+}
+
+.task-form button {
+  background: #6a0dad;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.task-form button:hover {
+  background: #8a2be2;
+}
+
+/* Task List */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual Task */
+.task {
+  background: #f3e5f5;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #8a2be2;
+  transition: 0.3s;
+}
+
+.task:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Completed Tasks */
+.task.completed {
+  background: #e1bee7;
+  text-decoration: line-through;
+  color: #7b2cbf;
+}
+
+/* Task Buttons */
+.task button {
+  margin-top: 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task button:nth-child(1) {
+  background: #8a2be2;
+  color: white;
+}
+
+.task button:nth-child(2) {
+  background: #ffcccb;
+  color: #d32f2f;
+}
+
+.task button:hover {
+  opacity: 0.8;
+}
+
+/* Filter & Sorting Controls */
+.filter-sort {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.filter-sort select {
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #f8eafd;
+  border: 1px solid #8a2be2;
+  color: #6a0dad;
+  cursor: pointer;
+}
+
+.filter-sort select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(138, 43, 226, 0.5);
+}
